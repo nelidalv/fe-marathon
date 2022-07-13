@@ -53,20 +53,22 @@ body {
 }
 
 .start {
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+  background:#55a5f5;
 }
 
 .progress {
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  background:#f55555;
 }
 
 .done {
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  background:#ffc04d;
 }
 /**/
 .hold {
-  border: 5px solid rgb(152, 240, 152);
-  box-shadow: 5px 8px 5px rgb(196, 185, 185 0.50);
+  border: 2px solid #55a5f5;
+  background:#fff;
+  color: #000;
+  border-radius: 5px;
 }
 
 .hide {
@@ -74,5 +76,5 @@ body {
 }
 /**/
 .hovered {
-  border-top: 2px solid #55a5f5;
+  border-top: 3px solid #55a5f5;
 }
