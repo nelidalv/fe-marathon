@@ -11,22 +11,28 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
+h2 {
+  color: #111;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 600px;
+  background-image: url(pt.jpg);
+  background-size: cover;
 }
 .square {
-  width: 16px;
-  height: 16px;
-  background: #1d1d1d;
+  width: 20px;
+  height: 30px;
+  background: #fff;
   margin: 2px;
-  box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #fefefe;
+  opacity: 0.1;
   transition: 2s ease;
 }
 .square:hover{
   transition-duration: 0s;
+  opacity: 1;
 }

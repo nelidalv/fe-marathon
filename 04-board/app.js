@@ -1,6 +1,6 @@
 const board = document.querySelector('#board')
 // const colors = ['#e74c3c', '#8e44ad', '#349db', '#e67e22', '#2ecc71']
-const SQUAERS_NUMBER = 300
+const SQUAERS_NUMBER = 400
 
 for (let i = 0 ; i < SQUAERS_NUMBER; i++) {
     const square = document.createElement('div') // в строковом виде говорим какой тег хотим создать
