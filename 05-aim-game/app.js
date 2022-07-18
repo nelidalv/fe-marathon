@@ -28,13 +28,17 @@ board.addEventListener('click', event => {
     }
 })
 
-
 function startGame() {
     setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
-    cheatTheGame(time)
+    if (time === 15) {
+        cheatTheGame()
+    } 
 }
+
+
+
 function decreaseTime() {
     if (time === 0) {
         finishGame()
@@ -92,11 +96,10 @@ function getRandomIntInclusive(xx, yy) {
 
 function cheatTheGame () {
     function cheat() {
-    const circle = document.querySelector('.circle')
-    
+    const circle = document.querySelector('.circle')    
     if (circle) {
         circle.click()
     }
 }
-    setInterval(cheat, 75)
+    setInterval(cheat, 250)
 }
