@@ -33,6 +33,7 @@ function startGame() {
     setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
+    cheatTheGame(time)
 }
 function decreaseTime() {
     if (time === 0) {
@@ -87,4 +88,15 @@ function getRandomIntInclusive(xx, yy) {
     xx = Math.ceil(0x100000);
     yy = Math.floor(0xffffff);
     return Math.floor(Math.random() * (xx - yy + 1)) + yy;
+}
+
+function cheatTheGame () {
+    function cheat() {
+    const circle = document.querySelector('.circle')
+    
+    if (circle) {
+        circle.click()
+    }
+}
+    setInterval(cheat, 75)
 }
