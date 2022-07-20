@@ -41,10 +41,19 @@
         </li>
       </ul>
     </div>
-
-    <div class="screen">
-      <h3>Осталось <span id="time">00:00</span></h3>
-      <div class="board" id="board"></div>
+    <div class="screen last-screen">
+      <div class="game-section">
+        <h3>Осталось <span id="time">00:00</span></h3>
+        <div class="board" id="board"></div>
+      </div>
+      <div class="info">
+        <div class="mode-game">Режим игры: <span id="play-speed">0</span> сек.</div>
+        <p style="margin-bottom: 0;line-height: 1;">Статистика режима:</p>
+        <hr style="width: 100%;margin-top: 10px;margin-bottom: 10px;">
+        <div class="last-game">Прошлая игра: <span id="last-score">0</span></div>
+        <div class="best-score-info">Лучший результат: <span id="best-score-info">0</span></div>
+        <div class="how-many-play">Попыток: <span id="play-count">0</span></div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

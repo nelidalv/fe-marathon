@@ -27,7 +27,7 @@ a:hover {
 }
 
 h1 {
-  line-height: 1.4;
+  line-height: 1.1;
   font-size: 4rem;
 }
 
@@ -40,6 +40,30 @@ h1 {
   width: 100vw;
   transition: margin 0.5s ease-out;
   background: linear-gradient(90deg, #29323C 0%, #485563 100%);
+}
+
+.game-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-game{
+  font-size: 20px;
+  color: #ffa500;
+}
+
+.last-screen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info{
+  width: 250px;
+  text-align: left;
+  padding-left: 50px;
 }
 
 .screen.up {
@@ -92,6 +116,26 @@ h1 {
   box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
   border-radius: 30px;
   overflow: hidden;
+}
+
+.board h1{
+  margin: 0;
+}
+
+.new-game{
+  cursor: pointer;
+}
+
+hr{
+  width: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.board .bestScore{
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #f1bd00;
 }
 
 .circle {
